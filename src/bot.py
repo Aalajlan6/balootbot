@@ -19,16 +19,15 @@ def bot_buy_phase(game_state):
     can_ashkal = game_state.players[game_state.dealer_index].team == game_state.current_player.team or game_state.players[(game_state.dealer_index + 1) % 4].team == game_state.current_player.team
     choice = input("Enter your choice: ")
     if choice == "1":
-        game_state.buy_phase = "sun"
+        game_state.ruleset = "sun"
         print("Bot chose to buy Sun.")
     elif choice == "2":
-        game_state.buy_phase = "hokm"
+        game_state.ruleset = "hokm"
         print("Bot chose to buy Hokm.")
     elif choice == "3":
-        game_state.buy_phase = "pass"
         print("Bot chose to pass.")
     elif choice == "4" and can_ashkal:
-        game_state.buy_phase = "ashkal"
+        game_state.ruleset = "ashkal"
         print("Bot chose to buy Ashkal.")
     else:
         print("Invalid choice. Please try again.")
