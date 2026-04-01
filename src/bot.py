@@ -32,4 +32,4 @@ def bot_buy_phase(game_state):
         print("Bot chose to buy Ashkal.")
     else:
         print("Invalid choice. Please try again.")
-        buy_phase(game_state)
+        bot_buy_phase(game_state)
