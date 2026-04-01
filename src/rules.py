@@ -1,3 +1,6 @@
+SUITS = ["diamonds", "clubs", "hearts", "spades"]
+RANKS = ["7", "8", "9", "10", "J", "Q", "K", "A"]
+
 # Setting cards
 class card:
     def __init__(self, suit, rank):
@@ -13,8 +16,6 @@ class gameStates:
     def __init__(self):
         self.players = [player("Player 1"), player("Player 2"), player("Player 3"), player("Player 4")]
         self.deck = []
-        self.suits = ["diamonds", "clubs", "hearts", "spades"]
-        self.ranks = ["7", "8", "9", "10", "J", "Q", "K", "A"]
         self.current_player_index = 0
         self.ruleset = "sun" #or "hokm"
         self.hokm = None #(diamonds, clubs, hearts, spades), only if Hokm is invoked

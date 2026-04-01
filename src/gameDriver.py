@@ -26,8 +26,8 @@ def main():
             game_state.players[i].team = False
     #print("Players:")
     # Initialize deck
-    for suit in game_state.suits:
-        for rank in game_state.ranks:
+    for suit in SUITS:
+        for rank in RANKS:
             game_state.deck.append(card(suit, rank))
     # Shuffle deck
     random.shuffle(game_state.deck)
