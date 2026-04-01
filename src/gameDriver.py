@@ -5,9 +5,6 @@ import random
 from bot import *
 
 def main():
-    #Set bot position randomly (between four slots)
-    bot_position = random.randint(0, 3)
-    #print(f"Bot is in position {bot_position}")
     game_state = gameStates()
     # Initialize players, one bot one teammate two opponents, bot position is random then the rest are filled in clockwise order, so if bot is 0 then 2 is teammate, 1 and 3 are opponents, if bot is 1 then 2 is teammate, 3 and 0 are opponents, etc.
     bot_position = random.randint(0, 3)
