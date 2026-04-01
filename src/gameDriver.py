@@ -52,7 +52,6 @@ def main():
             p.hand.append(game_state.deck.pop())
     game_state.buy_card = game_state.deck.pop()
     print(f"Buy card is {game_state.buy_card.rank} of {game_state.buy_card.suit}")
-
     # Check each player's check TESTING
     # for p in order_of_play:
     #     print(f"{p.name} has the following hand:")
