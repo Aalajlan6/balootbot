@@ -14,16 +14,16 @@ def main():
     for i in range(4):
         if i == bot_position:
             game_state.players[i].name = "Bot"
-            game_state.players[i].team = True
+            game_state.players[i].team = 0
         elif i == teammate_position:
             game_state.players[i].name = "Teammate"
-            game_state.players[i].team = True
+            game_state.players[i].team = 0
         elif i == opponent1_position:
             game_state.players[i].name = "Opponent 1"
-            game_state.players[i].team = False
+            game_state.players[i].team = 1
         elif i == opponent2_position:
             game_state.players[i].name = "Opponent 2"
-            game_state.players[i].team = False
+            game_state.players[i].team = 1
     #print("Players:")
     # Initialize deck
     for suit in SUITS:
