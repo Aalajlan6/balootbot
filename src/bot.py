@@ -1,6 +1,5 @@
 #For now just manual inputs until we implement ml
 
-from random import choice
 
 
 def bot_buy_phase(game_state):
@@ -18,6 +17,7 @@ def bot_buy_phase(game_state):
     print("3. Pass")
     print("4. Ashkal (if available)")
     can_ashkal = game_state.players[game_state.dealer_index].team == game_state.current_player.team or game_state.players[(game_state.dealer_index + 1) % 4].team == game_state.current_player.team
+    choice = input("Enter your choice: ")
     if choice == "1":
         game_state.buy_phase = "sun"
         print("Bot chose to buy Sun.")
